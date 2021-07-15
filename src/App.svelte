@@ -1,9 +1,11 @@
 <script lang="ts">
-	import MainPage from "./modules/main-page/MainPage.svelte";
-	import Attractions from "./modules/main-page/Attractions.svelte";
-	import NewsPage from "./modules/main-page/NewsPage.svelte";
+    import MainPage from "./modules/main-page/MainPage.svelte";
+    import Attractions from "./modules/main-page/Attractions.svelte";
+    import NewsPage from "./modules/main-page/NewsPage.svelte";
+    import Contact from "./modules/main-page/Contact.svelte";
+    import ReservationsPage from "./modules/main-page/ReservationsPage.svelte";
 
-	let currentPage: string = 'Główna';
+    let currentPage: string = 'Główna';
     const pages: string[] = ['Główna', 'Atrakcje', 'Aktualności', 'Kontakt', 'Rezerwacje', 'Rezerwacje-Info', 'Social-Media', 'zdjęcia'];
 </script>
 
@@ -24,6 +26,10 @@
         <Attractions/>
     {:else if currentPage === 'Aktualności'}
         <NewsPage/>
+    {:else if currentPage === 'Kontakt'}
+        <Contact/>
+    {:else if currentPage === 'Rezerwacje'}
+        <ReservationsPage/>
     {/if}
 </div>
 

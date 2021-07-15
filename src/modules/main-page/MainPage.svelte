@@ -6,6 +6,7 @@
     import Button from "../../utils/Button.svelte";
     import HR from "../../utils/HR.svelte";
     import {download} from "../../utils/Download.ts";
+    import './../Container.css'
 
     let loadedFile: MainPageModel = {
         firstParagraph: {
@@ -74,9 +75,4 @@
 </div>
 
 <style>
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 </style>
