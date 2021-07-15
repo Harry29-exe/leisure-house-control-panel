@@ -4,9 +4,12 @@
     import NewsPage from "./modules/main-page/NewsPage.svelte";
     import Contact from "./modules/main-page/Contact.svelte";
     import ReservationsPage from "./modules/main-page/ReservationsPage.svelte";
+    import ReservationsInfoPage from "./modules/main-page/ReservationsInfoPage.svelte";
+    import SocialMedia from "./modules/main-page/SocialMedia.svelte";
+    import PhotosPage from "./modules/main-page/PhotosPage.svelte";
 
     let currentPage: string = 'Główna';
-    const pages: string[] = ['Główna', 'Atrakcje', 'Aktualności', 'Kontakt', 'Rezerwacje', 'Rezerwacje-Info', 'Social-Media', 'zdjęcia'];
+    const pages: string[] = ['Główna', 'Atrakcje', 'Aktualności', 'Kontakt', 'Rezerwacje', 'Rezerwacje-Info', 'Social-Media', 'Zdjęcia'];
 </script>
 
 
@@ -30,6 +33,12 @@
         <Contact/>
     {:else if currentPage === 'Rezerwacje'}
         <ReservationsPage/>
+    {:else if currentPage === 'Rezerwacje-Info'}
+        <ReservationsInfoPage/>
+    {:else if currentPage === 'Social-Media'}
+        <SocialMedia/>
+    {:else if currentPage === 'Zdjęcia'}
+        <PhotosPage/>
     {/if}
 </div>
 

@@ -9,6 +9,6 @@
     div {
         width: 90%;
         height: 0;
-        border-top: 2px solid;
+        border-top: 4px solid;
     }
 </style>

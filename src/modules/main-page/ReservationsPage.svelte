@@ -47,7 +47,7 @@
             Data do:
             <input type="number" min="1" max="31" bind:value={reservation.to[2]}>
             <input type="number" min="1" max="12" bind:value={reservation.to[1]}>
-            <input type="number" min="2000" max="3000" bind:value={reservation.to[10}>
+            <input type="number" min="2000" max="3000" bind:value={reservation.to[0]}>
 
         </div>
         <Button on:click={() => {

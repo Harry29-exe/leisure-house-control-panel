@@ -16,9 +16,11 @@
         align-items: center;
         width: 250px;
         height: 60px;
-        background: gray;
+        background: #01dddd;
         cursor: pointer;
         margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
     }
 
     div:hover {
