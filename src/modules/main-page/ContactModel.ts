@@ -1,4 +1,6 @@
 export interface ContactModel {
     googleMapsSrc: string,
-    contact: string
+    contact: string,
+    telephone: string,
+    email: string
 }

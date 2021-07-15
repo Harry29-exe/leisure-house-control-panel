@@ -8,7 +8,9 @@
 
     let model: ContactModel = {
         googleMapsSrc: '',
-        contact: ''
+        contact: '',
+        telephone: '',
+        email: ''
     }
 
     const onFileLoad = (file: ContactModel) => {
@@ -26,6 +28,8 @@
 
     <TextInput description="Skopiowany link z google maps" bind:value={model.googleMapsSrc}/>
     <TextAreaInput description="Informacje kontaktowe" bind:value={model.contact}/>
+    <TextInput description="telefon wyświetlany na stronie" bind:value={model.telephone}/>
+    <TextInput description="email wyświetlany na stronie" bind:value={model.email}/>
 
     <Button on:click={downloadFile} text="Pobierz powyższy plik"/>
 </div>
